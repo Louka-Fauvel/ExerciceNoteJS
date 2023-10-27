@@ -118,7 +118,7 @@
         <hr class='my-5'/>
         <h2 class='text-center'>Ajouter une nouvelle transaction</h2>
 
-        <form novalidate id='form-expense' onsubmit="FormValidation()">
+        <form novalidate id='form-expense'>
           <div class="form-group">
             <label for="inputAddress">Nom</label>
             <input type="text" class="form-control" id="input_name">
@@ -137,10 +137,11 @@
           <div class='d-flex justify-content-end'>
             <button type="submit" class="btn btn-success">Ajouter la transaction</button>
           </div>
+            <div id="messageAlert"></div>
         </form>
       </div>
     </div>
   </div>
-  <script crossorigin="anonymous" src="assets/script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
